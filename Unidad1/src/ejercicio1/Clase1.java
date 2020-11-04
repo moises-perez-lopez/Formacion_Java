@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejemplo1;
+package ejercicio1;
 
 /**
  *
  * @author moises
  */
-public class Main {
+public class Clase1 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Prueba");
+        System.out.println("Hola");
     }
     
 }
