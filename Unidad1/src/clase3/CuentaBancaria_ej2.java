@@ -17,7 +17,7 @@ public class CuentaBancaria_ej2 {
     private String numeroTitular;
     private double saldo;
     private Integer contadorHistorial = 0;
-    private Movimiento_ej1 [] arrayMovimientos;
+    private Movimiento_ej2 [] arrayMovimientos;
     
     private static final int MAX_MOVIMIENTOS=100;
 
@@ -26,7 +26,7 @@ public class CuentaBancaria_ej2 {
     }
     
     public CuentaBancaria_ej2(int movimientos) {
-        arrayMovimientos = new Movimiento_ej1 [movimientos];
+        arrayMovimientos = new Movimiento_ej2 [movimientos];
     }
 
     public String getNombreTitular() {
@@ -55,7 +55,7 @@ public class CuentaBancaria_ej2 {
     
     public void ingresa(double ingreso){
         saldo = saldo + ingreso;
-        Movimiento_ej1 mov = new Movimiento_ej1();
+        Movimiento_ej2 mov = new Movimiento_ej2();
         mov.setFecha(new Date());
         mov.setOperacion("Ingreso");
         mov.setCantidad(ingreso);
@@ -67,7 +67,7 @@ public class CuentaBancaria_ej2 {
     
     public void reintegra(double reintegro){
         saldo = saldo - reintegro;
-        Movimiento_ej1 mov = new Movimiento_ej1();
+        Movimiento_ej2 mov = new Movimiento_ej2();
         mov.setFecha(new Date());
         mov.setOperacion("Reintegro");
         mov.setCantidad(reintegro);
