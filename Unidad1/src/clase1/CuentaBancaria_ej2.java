@@ -5,8 +5,7 @@
  */
 package clase1;
 
-/* 
-
+/**
         1º Tengo que crear un programa para gestionar cuentas bancarias. Cada una debe almacenar el nombre del titular,
         el numero de cuenta y el saldo de la cuenta. El programa debera permitir asgignar los datos, hacer ingresos, 
         reintegros y recuperar el saldo actual. 
@@ -21,31 +20,43 @@ package clase1;
         el numero de la cuenta y el saldo). Las operaciones de hacer ingresos, reintegros y recuperar el saldo actual son metodos.
         4º Definimos en la clase las variables que nos piden en el enunciado, sus get y set correspondientes y los metodos
         que nos piden en el enunciado: ingresa(),reintegra() y recuperar el saldo actual que se corresonde con getSaldoCuenta()
-
+        * 
  */
+public class CuentaBancaria_ej2 {
+    private String nombreTitular;
+    private String numeroTitular;
+    private double saldo;
 
-public class Ejercicio2 {
-    
-    /**
-    * @param args the command line arguments
-    */
-    
-    public static void main(String[] args) {
-        
-        CuentaBancaria_ej2 cuenta = new CuentaBancaria_ej2();
-        cuenta.setNombreTitular("Moisés Pérez López");
-        cuenta.setNumeroTitular("123456");
-        cuenta.setSaldo(22.34);
-        
-        System.out.println("Los titulares son: " + cuenta.getNombreTitular());
-        System.out.println("Los Numeros son: " + cuenta.getNumeroTitular());
-        System.out.println("El saldo es: " + cuenta.getSaldo());
-        
-        cuenta.ingresa(20);
-        System.out.println("El saldo después del ingreso es: " + cuenta.getSaldo());
-        
-        cuenta.reintegra(30);    
-        System.out.println("El saldo después del reintegro es: " + cuenta.getSaldo());
-        
+    public String getNombreTitular() {
+        return nombreTitular;
     }
+
+    public void setNombreTitular(String nombreTitular) {
+        this.nombreTitular = nombreTitular;
+    }
+
+    public String getNumeroTitular() {
+        return numeroTitular;
+    }
+
+    public void setNumeroTitular(String numeroTitular) {
+        this.numeroTitular = numeroTitular;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+    
+    public void ingresa(double ingreso){
+        saldo = saldo + ingreso;
+    }
+    
+    public void reintegra(double reintegro){
+        saldo = saldo - reintegro;
+    }
+    
 }
