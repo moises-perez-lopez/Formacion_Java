@@ -11,6 +11,7 @@ package clase1;
         output : suma
         Para LEER datos de teclado : (new java.util.Scanner(System.in)).METODO_PARA_CADA_TIPO_DE_DATOS;
 
+
 */
 public class Ejercicio1 {
 
