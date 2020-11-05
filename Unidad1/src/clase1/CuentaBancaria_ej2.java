@@ -24,6 +24,7 @@ package clase1;
         
  */
 public class CuentaBancaria_ej2 {
+    public static double interes = 0.01;
     private String nombreTitular;
     private String numeroTitular;
     private double saldo;
