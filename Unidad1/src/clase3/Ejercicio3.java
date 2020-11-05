@@ -19,7 +19,7 @@ public class Ejercicio3 {
     
     public static void main(String[] args){
         
-        CuentaBancaria_ej2 cuenta = new CuentaBancaria_ej2(3);
+        CuentaBancaria_ej3 cuenta = new CuentaBancaria_ej3(3);
         
     }
 }
