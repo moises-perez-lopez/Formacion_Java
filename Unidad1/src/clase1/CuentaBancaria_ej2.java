@@ -20,7 +20,8 @@ package clase1;
         el numero de la cuenta y el saldo). Las operaciones de hacer ingresos, reintegros y recuperar el saldo actual son metodos.
         4º Definimos en la clase las variables que nos piden en el enunciado, sus get y set correspondientes y los metodos
         que nos piden en el enunciado: ingresa(),reintegra() y recuperar el saldo actual que se corresonde con getSaldoCuenta()
-        * 
+        
+        
  */
 public class CuentaBancaria_ej2 {
     private String nombreTitular;

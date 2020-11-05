@@ -22,6 +22,7 @@ package clase1;
         4º Definimos en la clase las variables que nos piden en el enunciado, sus get y set correspondientes y los metodos
         que nos piden en el enunciado: ingresa(),reintegra() y recuperar el saldo actual que se corresonde con getSaldoCuenta()
 
+
  */
 
 public class Ejercicio2 {
