@@ -23,6 +23,7 @@ public class Item {
     public Item(TipoOperacion tipo) {
         this.tipo = tipo;
         this.esNumero = false;
+        
     }
 
     public double getValor() {

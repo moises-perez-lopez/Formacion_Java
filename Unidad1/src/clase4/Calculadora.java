@@ -35,6 +35,7 @@ public class Calculadora {
        }
    }
    
+   
    private double calcular(){
        double resultado = lista.get(0).getValor();
        for (int i=1; i<lista.size();i++){
